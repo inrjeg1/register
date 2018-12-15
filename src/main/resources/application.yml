@@ -1,0 +1,57 @@
+version: latest
+
+# Logger configuration
+logging:
+  file: logs/application.log
+  pattern:
+    console: "%d %-5level [%thread] %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    org.springframework: INFO
+    org.hibernate: INFO
+    
+
+# actuator endpoints
+management:
+  endpoints: 
+    web.exposure.include: "*"
+
+spring:
+#Console log highlighter
+  output.ansi.enabled: ALWAYS
+# JPA properties
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties.hibernate.jdbc.lob.non_contextual_creation: true
+    show-sql: false
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    generate-ddl: false
+  jms:
+    pub-sub-domain: true    
+  profiles:
+    active: development
+
+---
+# Spring Boot configuration -  development
+spring:
+  profiles: development    
+#active mq properties
+  activemq:
+   user: admin
+   password: admin   
+   activemq_location: tcp://0.0.0.0:61616?jms.redeliveryPolicy.maximumRedeliveries=1
+# Database
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/iot_development
+    username: postgres
+    password: postgres
+
+# Server configuration
+server:
+  hostPattern: http://localhost:3002
+  port: 3002
+  sessionTimeout: 30
