@@ -46,7 +46,7 @@ spring:
 # Database
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/iot_development
+    url: jdbc:postgresql://localhost:5432/helloalmere
     username: postgres
     password: postgres
 
