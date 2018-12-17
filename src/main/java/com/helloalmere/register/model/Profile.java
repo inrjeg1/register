@@ -14,6 +14,7 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -45,10 +46,12 @@ public class Profile {
 	@JsonProperty("phone_number")
 	private String phoneNumber;
 	
+	
 	@OneToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="category_id")
 	@JsonProperty("category")
 	private Category category;
+	
 	
 	@OneToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="proficiency_id")

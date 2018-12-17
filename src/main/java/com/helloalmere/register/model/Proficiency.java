@@ -12,7 +12,9 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
@@ -45,6 +47,7 @@ public class Proficiency {
     @JsonProperty("created_at")
     private Date createdAt = new Date();
     
+    @JsonIgnore
     @OneToOne(mappedBy="proficiency")
     private Profile profile;
 		
@@ -101,5 +104,15 @@ public class Proficiency {
     protected void onCreate() {
         createdAt = new Date();        
     }
+
+	public Profile getProfile() {
+		return profile;
+	}
+
+	public void setProfile(Profile profile) {
+		this.profile = profile;
+	}
+    
+    
 
 }
