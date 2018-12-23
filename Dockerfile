@@ -2,7 +2,8 @@ FROM openjdk:8-jre-alpine
 
 MAINTAINER Rajasekaran Jeganathan <rajasekaran.jeganathan@gmail.com>
 
-RUN apt-get install openjdk-8-jdk openjdk-8-dbg
+RUN apk update 
+RUN apk add openjdk8
 
 VOLUME /tmp
 ENV               VOLUME /register_service

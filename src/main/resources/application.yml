@@ -32,7 +32,7 @@ spring:
   jms:
     pub-sub-domain: true    
   profiles:
-    active: development
+    active: prod
 
 ---
 # Spring Boot configuration -  development
@@ -55,3 +55,26 @@ server:
   hostPattern: http://localhost:3002
   port: 3002
   sessionTimeout: 30
+ 
+---
+# Spring Boot configuration -  development
+spring:
+  profiles: prod    
+#active mq properties
+  activemq:
+   user: admin
+   password: admin   
+   activemq_location: tcp://0.0.0.0:61616?jms.redeliveryPolicy.maximumRedeliveries=1
+# Database
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://35.204.176.245:5432/helloalmere
+    username: postgres
+    password: postgres
+
+# Server configuration
+server:
+  hostPattern: http://localhost:3002
+  port: 3002
+  sessionTimeout: 30
+ 
