@@ -31,10 +31,29 @@ public class ProfileRegisterController {
 
 	@RequestMapping(method = RequestMethod.POST)
 	public ResponseEntity<Object> createRule(@Valid @RequestBody Profile profile) {
-
+		
+		if (!isAlreadyRegisteredCheck(profile)) {
+			
 		Profile savedProfile = repository.save(profile);
 		return new ResponseEntity<>(savedProfile, HttpStatus.CREATED);
+		
+		}else {
+			return new ResponseEntity<>(profile,HttpStatus.UNPROCESSABLE_ENTITY);
+		}
+	}
+	
+	private boolean isAlreadyRegisteredCheck(Profile profile) {
 
+		List<Profile> registredProfiles = repository.findAll();
+
+		for (Profile p : registredProfiles) {
+			if (p.getFirstName().equalsIgnoreCase(profile.getFirstName())
+					&& p.getEmail().equalsIgnoreCase(profile.getEmail())) {
+				return true;
+			}
+		}
+
+		return false;
 	}
 
 }

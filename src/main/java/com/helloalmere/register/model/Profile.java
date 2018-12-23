@@ -14,7 +14,6 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -53,10 +52,9 @@ public class Profile {
 	private Category category;
 	
 	
-	@OneToOne(cascade=CascadeType.ALL)
-	@JoinColumn(name="proficiency_id")
+	@Column(name="proficiency",nullable=false)
 	@JsonProperty("proficiency")
-	private Proficiency proficiency;
+	private String proficiency;
 	
 	
 	/** The created at. */
@@ -117,15 +115,7 @@ public class Profile {
 		this.category = category;
 	}
 
-	@JsonProperty("proficiency")
-	public Proficiency getProficiency() {
-		return proficiency;
-	}
-
-	@JsonProperty("proficiency")
-	public void setProficiency(Proficiency proficiency) {
-		this.proficiency = proficiency;
-	}
+	
 
 	public Date getCreatedAt() {
 		return createdAt;
@@ -143,7 +133,15 @@ public class Profile {
         createdAt = new Date();        
     }
 
-	
+    @JsonProperty("proficiency")
+    public String getProficiency() {
+		return proficiency;
+	}
+
+    @JsonProperty("proficiency")
+    public void setProficiency(String proficiency) {
+		this.proficiency = proficiency;
+	}
 	
 	
 
