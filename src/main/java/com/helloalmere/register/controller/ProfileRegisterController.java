@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.helloalmere.register.model.Profile;
+import com.helloalmere.register.service.MailService;
 import com.helloalmere.register.service.ProfileRepository;
 
 @RestController
@@ -22,7 +23,8 @@ public class ProfileRegisterController {
 
 	@Autowired
 	private ProfileRepository repository;
-
+	
+	
 	@Transactional(readOnly = true)
 	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<List<Profile>> getAllProfiles() {
@@ -33,8 +35,9 @@ public class ProfileRegisterController {
 	public ResponseEntity<Object> createRule(@Valid @RequestBody Profile profile) {
 		
 		if (!isAlreadyRegisteredCheck(profile)) {
-			
+				
 		Profile savedProfile = repository.save(profile);
+		MailService.sendMail(savedProfile);
 		return new ResponseEntity<>(savedProfile, HttpStatus.CREATED);
 		
 		}else {

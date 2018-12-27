@@ -32,7 +32,7 @@ spring:
   jms:
     pub-sub-domain: true    
   profiles:
-    active: prod
+    active: development
 
 ---
 # Spring Boot configuration -  development
@@ -68,7 +68,7 @@ spring:
 # Database
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://35.204.176.245:5432/helloalmere
+    url: jdbc:postgresql://postgres:5432/helloalmere
     username: postgres
     password: postgres
 
