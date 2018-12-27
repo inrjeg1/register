@@ -31,3 +31,121 @@
 2018-12-27 10:04:57,848 INFO  [http-nio-3002-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
 2018-12-27 10:04:57,875 INFO  [http-nio-3002-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 26 ms
 2018-12-27 10:04:58,256 INFO  [http-nio-3002-exec-1] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator : HHH000397: Using ASTQueryTranslatorFactory
+2018-12-27 10:37:32,189 INFO  [Test worker] com.helloalmere.register.RegisterApplicationTests : Starting RegisterApplicationTests on L-NL-20563 with PID 6304 (started by rjeganathan in C:\Users\rjeganathan\eclipse-workspace\register)
+2018-12-27 10:37:32,193 INFO  [Test worker] com.helloalmere.register.RegisterApplicationTests : The following profiles are active: development
+2018-12-27 10:37:33,723 INFO  [Test worker] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-12-27 10:37:33,809 INFO  [Test worker] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77ms. Found 1 repository interfaces.
+2018-12-27 10:37:34,604 INFO  [Test worker] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$82a4494a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-27 10:37:34,645 INFO  [Test worker] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$224967c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-27 10:37:34,988 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-27 10:37:35,138 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate Core {5.3.7.Final}
+2018-12-27 10:37:35,141 INFO  [Test worker] org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2018-12-27 10:37:35,350 INFO  [Test worker] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2018-12-27 10:37:35,578 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2018-12-27 10:37:35,742 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2018-12-27 10:37:35,769 INFO  [Test worker] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-12-27 10:37:35,939 INFO  [Test worker] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2018-12-27 10:37:35,950 INFO  [Test worker] org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@644f65af
+2018-12-27 10:37:36,930 INFO  [Test worker] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-27 10:37:36,944 INFO  [Test worker] com.helloalmere.register.config.SimpleCORSFilter : SimpleCORSFilter init
+2018-12-27 10:37:39,381 INFO  [Test worker] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-27 10:37:40,883 INFO  [Test worker] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 16 endpoint(s) beneath base path '/actuator'
+2018-12-27 10:37:40,984 INFO  [Test worker] com.helloalmere.register.RegisterApplicationTests : Started RegisterApplicationTests in 9.347 seconds (JVM running for 10.988)
+2018-12-27 10:37:41,147 INFO  [Thread-8] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-27 10:37:41,156 INFO  [Thread-8] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-27 10:37:41,158 INFO  [Thread-8] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2018-12-27 10:37:41,185 INFO  [Thread-8] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2018-12-27 11:42:21,318 INFO  [main] com.helloalmere.register.RegisterApplication : Starting RegisterApplication on L-NL-20563 with PID 18212 (C:\Users\rjeganathan\eclipse-workspace\register\bin\main started by rjeganathan in C:\Users\rjeganathan\eclipse-workspace\register)
+2018-12-27 11:42:21,321 INFO  [main] com.helloalmere.register.RegisterApplication : The following profiles are active: development
+2018-12-27 11:42:22,567 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-12-27 11:42:22,642 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61ms. Found 1 repository interfaces.
+2018-12-27 11:42:23,271 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$80139d78] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-27 11:42:23,296 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$ff93eaaa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-27 11:42:24,075 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 3002 (http)
+2018-12-27 11:42:24,101 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2018-12-27 11:42:24,102 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/9.0.13
+2018-12-27 11:42:24,113 INFO  [main] org.apache.catalina.core.AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_162\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_162/bin/server;C:/Program Files/Java/jre1.8.0_162/bin;C:/Program Files/Java/jre1.8.0_162/lib/amd64;C:\Program Files\Docker\Docker\Resources\bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Users\rjeganathan\Project\Software\sqlite-dll-win64-x64-3230000;C:\Program Files\Git\cmd;C:\Gradle\gradle-4.7\bin;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\curl-7.61.1_1-win64-mingw\curl-7.61.1-win64-mingw\bin;C:\Program Files (x86)\CodeBlocks\MinGW\bin;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools;C:\Ruby24\bin;C:\Ruby23\bin;C:\Users\rjeganathan\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Users\rjeganathan\Project\Software\apache-maven-3.5.3\bin;C:\Users\rjeganathan\AppData\Local\atom\bin;C:\Users\rjeganathan\AppData\Local\GitHubDesktop\bin;C:\Users\rjeganathan\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code\bin;C:\Users\rjeganathan\AppData\Local\Yarn\bin;C:\Users\rjeganathan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\rjeganathan\Project\Software\eclipse;;.]
+2018-12-27 11:42:24,253 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2018-12-27 11:42:24,254 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2888 ms
+2018-12-27 11:42:25,165 INFO  [main] com.helloalmere.register.config.SimpleCORSFilter : SimpleCORSFilter init
+2018-12-27 11:42:25,490 INFO  [main] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-27 11:42:25,592 INFO  [main] org.hibernate.Version : HHH000412: Hibernate Core {5.3.7.Final}
+2018-12-27 11:42:25,597 INFO  [main] org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2018-12-27 11:42:25,790 INFO  [main] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2018-12-27 11:42:25,961 INFO  [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2018-12-27 11:42:26,093 INFO  [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2018-12-27 11:42:26,111 INFO  [main] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-12-27 11:42:26,233 INFO  [main] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2018-12-27 11:42:26,241 INFO  [main] org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4584304
+2018-12-27 11:42:27,027 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-27 11:42:28,542 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-27 11:42:29,339 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 16 endpoint(s) beneath base path '/actuator'
+2018-12-27 11:42:29,483 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 3002 (http) with context path ''
+2018-12-27 11:42:29,487 INFO  [main] com.helloalmere.register.RegisterApplication : Started RegisterApplication in 8.64 seconds (JVM running for 9.252)
+2018-12-27 11:43:09,808 INFO  [http-nio-3002-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-27 11:43:09,809 INFO  [http-nio-3002-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2018-12-27 11:43:09,834 INFO  [http-nio-3002-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 25 ms
+2018-12-27 11:43:10,098 INFO  [http-nio-3002-exec-1] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator : HHH000397: Using ASTQueryTranslatorFactory
+2018-12-27 11:47:20,774 INFO  [main] com.helloalmere.register.RegisterApplication : Starting RegisterApplication on L-NL-20563 with PID 21076 (C:\Users\rjeganathan\eclipse-workspace\register\bin\main started by rjeganathan in C:\Users\rjeganathan\eclipse-workspace\register)
+2018-12-27 11:47:20,777 INFO  [main] com.helloalmere.register.RegisterApplication : The following profiles are active: development
+2018-12-27 11:47:22,032 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-12-27 11:47:22,114 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71ms. Found 1 repository interfaces.
+2018-12-27 11:47:22,899 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$880f38a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-27 11:47:22,927 INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$78f85db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-27 11:47:23,726 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 3002 (http)
+2018-12-27 11:47:23,754 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2018-12-27 11:47:23,755 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet Engine: Apache Tomcat/9.0.13
+2018-12-27 11:47:23,772 INFO  [main] org.apache.catalina.core.AprLifecycleListener : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_162\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_162/bin/server;C:/Program Files/Java/jre1.8.0_162/bin;C:/Program Files/Java/jre1.8.0_162/lib/amd64;C:\Program Files\Docker\Docker\Resources\bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Users\rjeganathan\Project\Software\sqlite-dll-win64-x64-3230000;C:\Program Files\Git\cmd;C:\Gradle\gradle-4.7\bin;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\curl-7.61.1_1-win64-mingw\curl-7.61.1-win64-mingw\bin;C:\Program Files (x86)\CodeBlocks\MinGW\bin;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools;C:\Ruby24\bin;C:\Ruby23\bin;C:\Users\rjeganathan\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Users\rjeganathan\Project\Software\apache-maven-3.5.3\bin;C:\Users\rjeganathan\AppData\Local\atom\bin;C:\Users\rjeganathan\AppData\Local\GitHubDesktop\bin;C:\Users\rjeganathan\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code\bin;C:\Users\rjeganathan\AppData\Local\Yarn\bin;C:\Users\rjeganathan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\rjeganathan\Project\Software\eclipse;;.]
+2018-12-27 11:47:23,919 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2018-12-27 11:47:23,919 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 3092 ms
+2018-12-27 11:47:24,890 INFO  [main] com.helloalmere.register.config.SimpleCORSFilter : SimpleCORSFilter init
+2018-12-27 11:47:25,533 INFO  [main] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-27 11:47:25,706 INFO  [main] org.hibernate.Version : HHH000412: Hibernate Core {5.3.7.Final}
+2018-12-27 11:47:25,710 INFO  [main] org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2018-12-27 11:47:26,034 INFO  [main] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2018-12-27 11:47:26,222 INFO  [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2018-12-27 11:47:26,356 INFO  [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2018-12-27 11:47:26,374 INFO  [main] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-12-27 11:47:26,507 INFO  [main] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2018-12-27 11:47:26,515 INFO  [main] org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@787988f4
+2018-12-27 11:47:27,360 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-27 11:47:28,748 INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-27 11:47:29,624 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 16 endpoint(s) beneath base path '/actuator'
+2018-12-27 11:47:29,760 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 3002 (http) with context path ''
+2018-12-27 11:47:29,765 INFO  [main] com.helloalmere.register.RegisterApplication : Started RegisterApplication in 9.461 seconds (JVM running for 9.993)
+2018-12-27 11:48:00,436 INFO  [http-nio-3002-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-27 11:48:00,438 INFO  [http-nio-3002-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2018-12-27 11:48:00,470 INFO  [http-nio-3002-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 32 ms
+2018-12-27 11:48:00,748 INFO  [http-nio-3002-exec-1] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator : HHH000397: Using ASTQueryTranslatorFactory
+2018-12-27 11:48:58,344 INFO  [Test worker] com.helloalmere.register.RegisterApplicationTests : Starting RegisterApplicationTests on L-NL-20563 with PID 17776 (started by rjeganathan in C:\Users\rjeganathan\eclipse-workspace\register)
+2018-12-27 11:48:58,345 INFO  [Test worker] com.helloalmere.register.RegisterApplicationTests : The following profiles are active: development
+2018-12-27 11:48:59,675 INFO  [Test worker] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-12-27 11:48:59,757 INFO  [Test worker] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68ms. Found 1 repository interfaces.
+2018-12-27 11:49:00,467 INFO  [Test worker] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b20dda38] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-27 11:49:00,510 INFO  [Test worker] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$318e276a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-27 11:49:00,814 INFO  [Test worker] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-27 11:49:00,908 INFO  [Test worker] org.hibernate.Version : HHH000412: Hibernate Core {5.3.7.Final}
+2018-12-27 11:49:00,911 INFO  [Test worker] org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2018-12-27 11:49:01,103 INFO  [Test worker] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2018-12-27 11:49:01,293 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2018-12-27 11:49:01,423 INFO  [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2018-12-27 11:49:01,444 INFO  [Test worker] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-12-27 11:49:01,566 INFO  [Test worker] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2018-12-27 11:49:01,575 INFO  [Test worker] org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6da6312f
+2018-12-27 11:49:02,466 INFO  [Test worker] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-27 11:49:02,478 INFO  [Test worker] com.helloalmere.register.config.SimpleCORSFilter : SimpleCORSFilter init
+2018-12-27 11:49:04,763 INFO  [Test worker] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-27 11:49:06,164 INFO  [Test worker] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 16 endpoint(s) beneath base path '/actuator'
+2018-12-27 11:49:06,265 INFO  [Test worker] com.helloalmere.register.RegisterApplicationTests : Started RegisterApplicationTests in 8.343 seconds (JVM running for 9.583)
+2018-12-27 11:49:06,378 INFO  [Thread-8] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-27 11:49:06,391 INFO  [Thread-8] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-12-27 11:49:06,395 INFO  [Thread-8] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2018-12-27 11:49:06,406 INFO  [Thread-8] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.

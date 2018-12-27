@@ -3,6 +3,11 @@ package com.helloalmere.register.service;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.Charset;
+import java.nio.charset.CharsetEncoder;
+import java.nio.charset.StandardCharsets;
+import java.nio.charset.spi.CharsetProvider;
 import java.nio.file.Files;
 import java.util.Date;
 import java.util.HashMap;
@@ -17,6 +22,7 @@ import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+import org.apache.commons.lang3.CharSetUtils;
 import org.apache.commons.text.StringSubstitutor;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.util.ResourceUtils;
@@ -24,11 +30,13 @@ import org.springframework.util.ResourceUtils;
 import com.helloalmere.register.model.Category;
 import com.helloalmere.register.model.Profile;
 
+import io.micrometer.core.instrument.util.IOUtils;
+
 public class MailService {
 
 	private static String USER_NAME = "helloalmere"; // GMail user name (just the part before "@gmail.com")
 	private static String PASSWORD = "Almere@2019"; // GMail password
-	private static String RECIPIENT = "vanakkamalmere@gmail.com";
+	private static String RECIPIENT = "helloalmere@gmail.com";
 
 	// Sending Mail Test
 	public static void main(String[] args) {
@@ -43,24 +51,20 @@ public class MailService {
 
 	@Async
 	public static void sendMail(Profile profile) {
-		String subject = "BADMINTON REGISTRATION CONFIRMATION";
+		String subject = "Badminton Registration Confirmation ["+profile.getFirstName()+"]";
 		String body = getEmailBody(profile);
-		String[] to = { profile.getEmail() };
+		String[] to = { profile.getEmail(),RECIPIENT };
 		sendFromGMail(MailService.USER_NAME, MailService.PASSWORD, to, subject, body);
 	}
 
 	private static String getEmailBody(Profile profile) {
 		StringBuilder body = new StringBuilder();
 		
-		try {
-			File template = ResourceUtils.getFile("classpath:templates/emailbody.txt");
-			body.append(new String(Files.readAllBytes(template.toPath())));
-			
-		} catch (FileNotFoundException e) {			
-			e.printStackTrace();
-		} catch (IOException e) {			
-			e.printStackTrace();
-		}
+		InputStream inputStream = Thread.currentThread().getContextClassLoader().getResourceAsStream("templates/emailbody.txt");
+		String strTemplate = IOUtils.toString(inputStream, StandardCharsets.UTF_8);		
+		//File template = ResourceUtils.getFile("classpath:templates/emailbody.txt");
+		//body.append(new String(Files.readAllBytes(template.toPath())));
+		body.append(strTemplate);
 		
 		Map<String, String> valuesMap = new HashMap<>();
 		valuesMap.put("firstName", profile.getFirstName());
